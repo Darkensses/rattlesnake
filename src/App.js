@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Rattlesnake from './components/Rattlesnake';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <div className="app">
+      <div className="rattlesnake">
+        <Rattlesnake />
+      </div>
+
+      <div className="lyric">
+        <a href="https://www.youtube.com/watch?v=Q-i1XZc8ZwA" target="_blank" rel="noopener noreferrer">
+          <h1>I'm the serpent, Devil's servant</h1>
         </a>
-      </header>
+      </div>
+      <div className="div__gif">
+        <img src={require("./img/rattlesnake.webp")} />
+      </div>
     </div>
   );
 }
